@@ -1,0 +1,201 @@
+*{margin: 5px;
+padding: 5px;
+
+box-sizing: border-box;
+background-image: linear-gradient(to bottom, rgb(113, 141, 255), rgb(101, 149, 238), rgb(158,190,249));
+color: white
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+
+@font-face {
+        font-family: "Raleway";
+        src: url(../Raleway.ttf);
+}
+
+.body {
+    font-family: "Mynerve";
+}
+
+h1 {
+    color: bisque;
+}
+
+p {
+    color: aliceblue;
+    font-size: 32px;
+}
+
+.container-fluid {
+    color: beige;
+}
+
+.d-inline-block {
+    background-color: aliceblue;
+}
+
+.navbar-toggler-icon {
+    background-color: beige;
+}
+
+.navbar-nav {
+    background-color: aliceblue;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: aliceblue;    
+}
+
+.carousel-item {
+    width: 30%;
+  }
+
+.menu {
+    width: 100%;
+    height: 100vh;
+    padding:16px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "nosotros peliculas"
+    "series contacto";
+
+    column-gap: 16px;
+    row-gap: 16px;
+}
+
+.menu div {
+    color: blue;
+    font-size: 74px;
+
+    display: flex;
+    
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.menu_nosotros {
+    grid-area: nosotros;
+}
+
+.menu_servicios {
+    grid-area: peliculas;
+}
+
+.menu_productos {
+    grid-area: series;
+}
+
+.menu_contacto {
+    grid-area: contacto;
+}
+
+@media screen and (max-width: 1023px) {
+    .diapositivas div {
+        width: 85%;
+    }
+
+    .menu {
+        width: 100%;
+        padding:16px;
+        
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "nosotros peliculas"
+        "series contacto";
+      
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu {
+        width: 100%;
+        padding:16px;
+        
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:    
+        "nosotros"
+        "peliculas"
+        "series"
+        "contacto";
+      
+        row-gap: 16px;
+    } 
+}
+
+.footer {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.logofoot {
+    width: 5%;
+}
+
+/* ------ Acercade.html ----- */
+
+.informacionsobre {
+    color:rgba(237, 151, 210, 0.5);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: underline;
+    font-family: "Mynerve";
+}
+
+.container {
+    height: 100px;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    
+    justify-content: space-between;
+    justify-items: center;
+
+    align-content: space-between;
+}
+
+.tarjetas {
+    height: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    
+    display: block;
+    gap: 10px;
+
+    justify-content: space-between;
+    justify-items: center;
+
+    align-content: space-between;
+}
+
+.imgpeliculas {
+    width: fit-content;
+}
+
+.imgseries {
+    width: fit-content;
+}
+
+.volverinicio {
+    position: relative;
+    text-decoration: none;
+}
